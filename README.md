@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="assets/banner.png" alt="NOOBLERS UAV" width="100%"/>
-</p>
-
 <h1 align="center">✈️ Laws of Motion — Electric Fixed-Wing UAV</h1>
 
 <p align="center">
@@ -132,8 +128,6 @@ LOM/
 ├── LICENSE                         # MIT License
 ├── .gitignore                      # Git ignore rules
 ├── requirements.txt                # Python dependencies
-├── docs/
-│   └── NOOBLERS_Project_Report.pdf # Original technical report
 ├── scripts/
 │   ├── airfoil_selector.py         # Airfoil comparison & selection
 │   ├── lift_drag_calculator.py     # CL/CD/L/D analysis
@@ -152,8 +146,6 @@ LOM/
 │       ├── e423.dat
 │       └── mh114.dat
 ├── output/                         # Generated plots (gitignored)
-└── assets/
-    └── banner.png                  # Banner image
 ```
 
 ---

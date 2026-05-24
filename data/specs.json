@@ -1,0 +1,126 @@
+{
+  "aircraft": {
+    "name": "NOOBLERS Fixed-Wing UAV",
+    "team": "Team NOOBLERS",
+    "competition": "Laws of Motion, Kshitij 2025",
+    "institution": "IIT Kharagpur"
+  },
+
+  "wing": {
+    "airfoil": "Selig S1223",
+    "span_mm": 1160,
+    "chord_mm": 270,
+    "area_m2": 0.3132,
+    "aspect_ratio": 4.3,
+    "planform": "rectangular",
+    "sweep_deg": 0,
+    "dihedral_deg": 0,
+    "incidence_deg": 2,
+    "spar_location_pct_chord": 25,
+    "spar_material": "carbon fibre rod",
+    "construction": "EPS styrofoam, hot-wire cut",
+    "surface_finish": "PVA / fibre-reinforced tape",
+    "aileron_type": "trailing edge, Mylar hinge"
+  },
+
+  "fuselage": {
+    "length_mm": 850,
+    "construction": "corosheet + styrofoam hybrid",
+    "nose": "carved styrofoam (crash absorption)",
+    "centre": "corosheet box (battery, ESC, receiver)",
+    "tail_boom": "integrated corosheet extension",
+    "payload_bay": "servo-actuated door"
+  },
+
+  "tail": {
+    "type": "conventional cruciform",
+    "moment_arm_mm": 520,
+    "static_margin_pct_MAC": [5, 10]
+  },
+
+  "propulsion": {
+    "motor": {
+      "model": "2212",
+      "kv": 1400,
+      "mass_g": 55
+    },
+    "battery": {
+      "type": "Li-Po",
+      "cells": 3,
+      "voltage_nominal_V": 11.1,
+      "voltage_full_V": 12.6,
+      "capacity_mAh": 2200,
+      "mass_g": 185
+    },
+    "esc": {
+      "rating_A": 30,
+      "bec_V": 5.0,
+      "bec_A": 3.0,
+      "mass_g": 28
+    },
+    "propeller": {
+      "diameter_in": 10,
+      "pitch_in": 4.5,
+      "blades": 2,
+      "static_thrust_g": 870,
+      "mass_g": 15
+    },
+    "no_load_rpm": 15540,
+    "cruise_current_A": [12, 18],
+    "thrust_to_weight": 1.10
+  },
+
+  "avionics": {
+    "transmitter": "Radiomaster Pocket",
+    "receiver_protocol": "ExpressLRS (ELRS)",
+    "frequency_GHz": 2.4,
+    "latency_ms": 5,
+    "link_budget_dB": 120,
+    "servos": {
+      "count": 5,
+      "type": "9g micro servo",
+      "torque_kgcm": 1.5,
+      "voltage_V": 4.8,
+      "allocation": [
+        "Left Aileron",
+        "Right Aileron",
+        "Elevator",
+        "Rudder",
+        "Payload Bay Door"
+      ]
+    },
+    "control_throws": {
+      "aileron_deg": 15,
+      "elevator_deg": 15,
+      "rudder_deg": 20
+    }
+  },
+
+  "weight_breakdown_g": {
+    "wing": 160,
+    "fuselage": 120,
+    "tail_assembly": 45,
+    "motor": 55,
+    "esc": 28,
+    "battery": 185,
+    "receiver": 8,
+    "servos": 45,
+    "propeller_and_mount": 35,
+    "wiring_connectors_hardware": 30,
+    "payload": 79
+  },
+
+  "performance": {
+    "auw_g": 790,
+    "wing_loading_Npm2": 24.8,
+    "stall_speed_ms": [7, 8],
+    "cruise_speed_ms": [10, 12],
+    "max_speed_ms": 18,
+    "lift_to_drag": [8, 10],
+    "endurance_min": [12, 16],
+    "cruise_reynolds": 190000,
+    "cg_pct_chord": 33,
+    "cg_from_le_mm": 90,
+    "cl_max": 2.0
+  }
+}
